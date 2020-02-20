@@ -2,7 +2,6 @@ package com.douzone.hellospring.controller;
 
 // import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,17 +20,17 @@ public class UserController {
 	
 	// @Autowired
 	
-//	@RequestMapping(value = {"/join","/j"}, method = RequestMethod.GET)
-//	public String join() {
-//		
-//		return "/WEB-INF/views/join.jsp";
-//	}
-	
-	@GetMapping(value = {"/join","/j"})
+	@RequestMapping(value = {"/join","/j"}, method = RequestMethod.GET)
 	public String join() {
 		
 		return "/WEB-INF/views/join.jsp";
 	}
+	
+//	@GetMapping(value = {"/join","/j"})
+//	public String join() {
+//		
+//		return "/WEB-INF/views/join.jsp";
+//	}
 	
 //	@ResponseBody
 //	@RequestMapping(value = "/join", method = RequestMethod.POST)
@@ -64,15 +63,10 @@ public class UserController {
 	@RequestMapping(value = "/update2")
 	public String update2(
 			@RequestParam(value="n", required=true, defaultValue="") String name,
-			@RequestParam(value="na", required=true, defaultValue="") String s) {
-		System.out.println("--"+name+"--");
-		return "UserController:update2 "+("-"+name+"-");
+			@RequestParam(value="a", required=true, defaultValue="0") int age) {
+		System.out.println("--"+name+"--"+age+"--");
+		return "UserController:update2 "+("-"+name+"-"+age+"-");
 	}
-	
-	
-	
-	
-	
 	
 	
 }
