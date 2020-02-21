@@ -8,6 +8,7 @@
 		<artifactId>spring-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
 	<artifactId>emaillist03</artifactId>
 	<packaging>war</packaging>
 
@@ -119,8 +120,6 @@
 					<password>admin</password>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
-
 </project>
