@@ -24,11 +24,10 @@ public class TestContainer {
 
 		User1 user1 = appContext.getBean(User1.class);
 		System.out.println(user1.getName());
-
+		
 		// Bean의 id가 자동으로 설정됨
 		user1 = (User1)appContext.getBean("user1");
 		System.out.println(user1.getName());
-		
 	}
 
 	// XML Bean Configuration(Implicit Configuration) 
@@ -38,21 +37,21 @@ public class TestContainer {
 
 		User1 user1 = appContext.getBean(User1.class);
 		System.out.println(user1.getName());
-
+		
 		// Bean 설정에서는 Bean의 id가 자동으로 설정되지 않음.
 		// 명시적으로 설정해야 한다.
 		user1 = (User1)appContext.getBean("user1");
 		System.out.println(user1.getName());
 	}	
-
-
+	
+	
 	// XML Auto Configuration(Annotation Scanning) 
 	public static void testBeanFactory01() {
 		BeanFactory bf = new XmlBeanFactory(new ClassPathResource("config/user/applicationContext01.xml"));
 
 		User1 user1 = bf.getBean(User1.class);
 		System.out.println(user1.getName());
-
+		
 		// Bean의 id가 자동으로 설정됨
 		user1 = (User1)bf.getBean("user1");
 		System.out.println(user1.getName());
@@ -64,11 +63,11 @@ public class TestContainer {
 
 		User1 user1 = bf.getBean(User1.class);
 		System.out.println(user1.getName());
-
+		
 		// Bean 설정에서는 Bean의 id가 자동으로 설정되지 않음.
 		// 명시적으로 설정해야 한다.
 		user1 = (User1)bf.getBean("user1");
 		System.out.println(user1.getName());
 	}
-
+	
 }
