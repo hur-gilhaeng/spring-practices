@@ -37,6 +37,20 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- SystemOutRule -->
+		<dependency>
+			<groupId>com.github.stefanbirkner</groupId>
+			<artifactId>system-rules</artifactId>
+			<version>1.19.0</version>
+		</dependency>
+		
+		<!-- 자바 표준(JR330) scanning, wiring annotation -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

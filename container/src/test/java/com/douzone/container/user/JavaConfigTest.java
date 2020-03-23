@@ -1,4 +1,4 @@
-package com.douzone.container.test;
+package com.douzone.container.user;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
