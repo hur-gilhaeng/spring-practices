@@ -17,13 +17,13 @@ public class XmlConfigTestContainer {
 		// XML Auto Configuration(Annotation Scanning) 
 		// testBeanFactory01();
 		
-		// XML Bean Configuration(Implicit Configuration) 
+		// XML Bean Configuration(explicit Configuration) 
 		// testBeanFactory02();
 		
 		// XML Auto Configuration(Annotation Scanning) 
 		// testApplicationContext01();
 		
-		// XML Bean Configuration(Implicit Configuration) 
+		// XML Bean Configuration(explicit Configuration) 
 		testApplicationContext02();
 	}
 
@@ -94,7 +94,7 @@ public class XmlConfigTestContainer {
 		System.out.println(user1.getName());
 	}
 
-	// XML Bean Configuration(Implicit Configuration) 
+	// XML Bean Configuration(explicit Configuration) 
 	public static void testBeanFactory02() {
 		BeanFactory bf = new XmlBeanFactory(new ClassPathResource("config/user/applicationContext02.xml"));
 
