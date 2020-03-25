@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class GuestbookController {
 	
 	@ResponseBody
-	@RequestMapping
+	@RequestMapping("/list") // 매핑지정
 	public String list() {
 		return "GuestbookController:list";
 	}
 	@ResponseBody
-	@RequestMapping
+	@RequestMapping("/delete") // 매핑지정
 	public String delete() {
 		return "GuestbookController:delete";
 	}
