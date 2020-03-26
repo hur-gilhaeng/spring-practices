@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hellospring</artifactId>
+	<artifactId>hellospring03</artifactId>
 
 	<packaging>war</packaging>
 	
@@ -114,7 +114,7 @@
 				<configuration>
 					<url>http://192.168.1.97:8080/manager/text</url>
 					<!-- http://127.0.0.1:8080/manager/text -->
-					<path>/hellospring</path>
+					<path>/hellospring03</path>
 					<username>admin</username>
 					<password>admin</password>
 				</configuration>
